@@ -13,7 +13,7 @@ In simple words, each new project provides a new unique token to be used in your
 The first iteration of Projects aims at providing you with the means to control your endpoint usage by `smart contract whitelisting`. This feature would be handy for a dApp where users communicate with a smart contract via Frontend — to protect your endpoint from misuse. A specified smart contract will allow your dApp users to request only a selected chain using a limited number of methods supported.
 
 <Callout type="warning">
-All requests using unsupported methods or chains get blocked.
+All requests using unsupported methods get blocked.
 </Callout>
 
 **Supported chains**:
@@ -37,33 +37,38 @@ You can use the *Projects* feature working with the following panes:
 
 <img src="/docs/build/getting-started/projects-pane.png" class="responsive-pic" width="500" />
 
+
+
+
+
+
+
+
 ### Add project
 
 To add a new project, follow these steps:
 
 1. In **Navigation**, click **Projects** to open the corresponding pane.
-2. In the **Projects** pane, click **+ Add Project**, and go through the steps to configure it:
+2. In the **Projects** pane, click **+ Create project**, and go through the steps to configure it:
 
 <img src="/docs/build/getting-started/add-project.png" class="responsive-pic" width="600" />
 
-    * **Project** — here your project automatically receives a name, and you can select a chain the project to work with.
+    * **Project** — enter a project name (required), select its type (optional), and add a description (optional).
+
+    * **Chains** — select chains and networks your project interacts with.
 <img src="/docs/build/getting-started/select-chain.png" class="responsive-pic" width="600" />
-    * **White list** — here you enter the smart contract address used for project communication. Note that your smart contract have to be deployed either on Ethereum or on other EVM-compatible blockchain.
-<img src="/docs/build/getting-started/enter-smart.png" class="responsive-pic" width="600" />
-    * **Plan** — here you select a service plan for your project.
-<img src="/docs/build/getting-started/project-plan.png" class="responsive-pic" width="600" />
-    * **Checkout** — here you check and confirm your project configuration by clicking **Next**.
-<img src="/docs/build/getting-started/project-checkout.png" class="responsive-pic" width="600" />
 
-Congrats — you've just configured and created a new project with smart contract white listing.
+    * **Whitelist** (optional) — provide entities (domains, IPs, smart contracts) that can interact with your project's endpoints.
 
-### View project
+Congrats — you've just configured and created a new project.
 
-To view a project's unique token, click the **Info** (`i`) icon of the corresponding project.
+### Copy project's token
+
+To copy a project's unique token, click the **Copy** icon below the corresponding project's name.
 <br/>
 <img src="/docs/build/getting-started/view-project.png" alt="View project's token" class="responsive-pic" width="500" />
 
-Congrats — you can view or copy your project's unique token.
+Congrats — you you've just copied your project's unique token.
 
 ### Delete project
 
@@ -71,9 +76,9 @@ Congrats — you can view or copy your project's unique token.
 For your own good, you won't be able to delete your primary project.
 </Callout>
 
-To delete a project, click the **Info** (`i`) icon of the corresponding project, then click **Delete project** and confirm your action.
+To delete a project, click the **Ellipsis** (`...`) icon of the corresponding project, then click **Delete** and confirm your action.
 <br/>
-<img src="/docs/build/getting-started/delete-project.png" alt="Delete project" class="responsive-pic" width="600" />
+<img src="/docs/build/getting-started/delete-project.png" alt="Delete project" class="responsive-pic" width="800" />
 
 Congrats — your additional project has been deleted.
 
